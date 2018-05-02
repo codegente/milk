@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>login</title>
+       
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+                <link href="css/style1.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	
+	</head>
+	<body>
+	<div class="container-fluid">
+	<img src="img/logo r human final.png" class="img-responsive centr1">
+	<h5  class="pix1" style="text-align:center;"><b >LOGIN TO YOUR HUMEN FUEL APP</b></h5>
+	<div class="registerform1" >
+			
+						 <div class="col-md-12">
+						 <div class="row">
+						 <div class="col-md-4"></div>
+						<div class="col-md-4">
+						
+								<div class="form-group">
+									 <div class="inner-addon left-addon">
+						<i class="glyphicon glyphicon-envelope"></i>      
+						 <input type="text" id="email" name="email" class="form-control redi1" placeholder=" Email ID*" />
+									</div>
+								 </div>
+						  </div>
+						 <div class="col-md-4"></div> </div></div>
+								  <div class="col-md-12">
+								  <div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+							<div class="form-group">
+							 <div class="inner-addon left-addon">
+							 <i class="glyphicon glyphicon-pencil"></i>      
+					 <input type="password" id="password" name="password" class="form-control redi1" placeholder=" Password*"/>
+											</div>
+										</div></div>
+									 <div class="col-md-4"></div> </div></div>
+      <div class="col-md-12">
+	  <div class="row">
+	    <div class="col-md-4"></div>
+	   <div class="col-md-4">
+ 
+   
+               <button class="btn butn1" type="submit" name="submit" id="login">LOGIN</button>
+       </div>
+	 <div class="col-md-4"></div> </div></div>
+</div>
+</div>
+
+<div class="col-md-12">
+ <div class="row">
+	 <div class="col-md-4"></div>
+	   <div class="col-md-4">
+			<div class="footer fot_image1">
+			   <img src="img/cow.png" class="foot_imag1">
+			</div>
+		</div>
+ <div class="col-md-4"></div> </div></div>		
+	
+	</body></html>
+
+
+
+
+<script>
+
+$("#login").click(function(){  
+var email = $("#email").val(); 
+var password = $("#password").val(); 
+
+       $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/loginjs.php?id="+email+"&pass="+password ,
+			data:"", 
+			success: function(data)
+			{   
+                                alert(data);
+                               if ($.trim(data) == 'successfuly login') { 
+				
+				 window.location.href="verify.html";
+				                                        }
+
+                            else { 
+                                         alert('email and password not currect');   
+                                      }                                  
+	
+				}
+			});
+
+});
+
+</script>
+

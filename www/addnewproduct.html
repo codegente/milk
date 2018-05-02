@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Add New Product</title>
+       
+    
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+                 <link href="css/style1.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	
+	
+	
+	</head>
+	<body>
+	
+	<!---<nav class="navbar"  style="background-color:#00c9ff;">
+	
+	</nav>-->
+	
+	<div class="container-fluid">
+	       <div class="panel panel-default def">
+              <div class="panel-body clr">
+			  <span class="glyphicon glyphicon-arrow-left" style="float:left;font-size:18px;"></span><b> ADD NEW PRODUCT</b>
+            <h3><b class="search1" style="margin-top: -40px;"> <a href="logout.php" style="color:  #fff;"> LOg Out 
+          <!--<span class="glyphicon glyphicon-shopping-cart" style="color:white;"></span>-->
+        </a></b></h3>		
+
+</div>
+                           
+          </div>
+
+		  <div class="panel panel-default ">
+              <div class="panel-body clrr">
+			    <div id="imaginary_container"> 
+                <div class="input-group stylish-input-group" >
+                    <input type="text" class="form-control searchh"  placeholder="SEARCH PRODUCTS">
+					
+					
+                </div>
+				<span class="glyphicon glyphicon-search searchbutton"></span>
+               </div>
+			  
+			</div>
+          </div>
+	
+   <div class="main" id="main">	  
+	 
+	</div>	 
+		 	  
+		  
+		</div>  
+	  
+		  
+</body></html>
+
+<script>
+
+$(document).ready(function(){   
+
+$.ajax({
+    url: 'http://codegente.com/aapp/session.php',
+    type: 'POST',
+    success: function(result) {
+        if (result == 'success'){   
+      
+
+url=document.URL;
+
+var pid=url.split("=")[1];
+
+ $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/addproductjs.php?pid="+pid,
+			data:"", 
+			success: function(data)
+			{   
+                              $("#main").append(data);   
+                              
+				}
+			}); 
+
+                 
+}else{
+             window.location="login.html";
+        }
+    }
+});
+});
+ 
+</script>
+	
