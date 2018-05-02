@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>ADD PAYMENT</title>
+        <title>humanfuel</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -26,7 +26,6 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		
 		<link href="css/style.css" rel="stylesheet" type="text/css" />
-
 		<link href="css/style1.css" rel="stylesheet" type="text/css" />
 
 		
@@ -34,31 +33,10 @@
 
 <body>
 
+<div>
+	<img src="img/HumanFuel.png" style="width:100%;">
 
-
-<div class="container-fluid">
-            <div class="col-md-12">
-			<div class="row">
-
-				<div class="panel panel-default paymnt">
-					<div class="panel-body">
-						<span class="glyphicon glyphicon-arrow-left"></span>
-						<h3 class="verifyhead"><b>ADD PAYMENT</b></h3>	
-                   <h3><b class="search1"> <a href="logout.php" style="color:  #fff;"> Log Out 
-          <!--<span class="glyphicon glyphicon-shopping-cart" style="color:white;"></span>-->
-        </a></b></h3>	
-					</div>
-				</div>
-           </div>      
-		   </div>
-   <div id="order">
-    
-  
-     
-		
 </div>
-
-
 
 </body>
 
@@ -66,41 +44,11 @@
 
 <script>
 
-$(document).ready(function(){  
-
-$.ajax({
-    url: 'http://codegente.com/aapp/session.php',
-    type: 'POST',
-    success: function(result) {
-        if (result == 'success'){   
-      
-
-url=document.URL;
-
-var order=url.split("=")[1];
-
- $.ajax({ 
-			type:"POST",   
-			url: "http://codegente.com/aapp/addpaymentjs.php?orderid="+order,
-			data:"", 
-			success: function(data)
-			{   
-                               $("#order").append(data);   
-                              
-				}
-
-                             
-			}); 
- 
-   $('#ppro').click(function(){ 
-alert();
-            
-                });
-
-}else{
-             window.location="login.html";
-        }
-    }
+$(document).ready(function () {
+    // Handler for .ready() called.
+    window.setTimeout(function () {
+        location.href = "frontlogin.html";
+    }, 2000);
 });
- });
+
 </script>

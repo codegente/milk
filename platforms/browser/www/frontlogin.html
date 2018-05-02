@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>ADD PAYMENT</title>
+        <title>Dairy</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -35,72 +35,27 @@
 <body>
 
 
-
 <div class="container-fluid">
-            <div class="col-md-12">
-			<div class="row">
-
-				<div class="panel panel-default paymnt">
-					<div class="panel-body">
-						<span class="glyphicon glyphicon-arrow-left"></span>
-						<h3 class="verifyhead"><b>ADD PAYMENT</b></h3>	
-                   <h3><b class="search1"> <a href="logout.php" style="color:  #fff;"> Log Out 
-          <!--<span class="glyphicon glyphicon-shopping-cart" style="color:white;"></span>-->
-        </a></b></h3>	
-					</div>
-				</div>
-           </div>      
-		   </div>
-   <div id="order">
-    
-  
-     
-		
+	<img src="img/logo.png" class="img-responsive logoo">
+	<h5 class="heading"><b>Pick the taste of purity that suits your budget</b></h5> 
+	<div class="loginbutton">
+		<a href="login.html"><button class="button1 button3"><b>LOGIN</b></button></a>
+		<a href="register.html"><button class="button2 button3"><b>REGISTER</b></button></a>
+	</div>
 </div>
+
+<div class="col-md-12">
+ <div class="row">
+	 <div class="col-md-4"></div>
+	   <div class="col-md-4">
+			<div class="footer foottr_space">
+			   <img src="img/cow.png" class="footing_image">
+			</div>
+		</div>
+ <div class="col-md-4"></div> </div></div>	
 
 
 
 </body>
 
 </html>
-
-<script>
-
-$(document).ready(function(){  
-
-$.ajax({
-    url: 'http://codegente.com/aapp/session.php',
-    type: 'POST',
-    success: function(result) {
-        if (result == 'success'){   
-      
-
-url=document.URL;
-
-var order=url.split("=")[1];
-
- $.ajax({ 
-			type:"POST",   
-			url: "http://codegente.com/aapp/addpaymentjs.php?orderid="+order,
-			data:"", 
-			success: function(data)
-			{   
-                               $("#order").append(data);   
-                              
-				}
-
-                             
-			}); 
- 
-   $('#ppro').click(function(){ 
-alert();
-            
-                });
-
-}else{
-             window.location="login.html";
-        }
-    }
-});
- });
-</script>

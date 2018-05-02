@@ -1,0 +1,693 @@
+.logoo{
+	width:220px;
+	height:202px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.heading{
+	color:black;
+	text-align:center;
+}
+
+.loginbutton{
+	margin-left: 15px;
+	
+	margin-right: 15px;
+	margin-bottom: -10px;
+}
+.subs5foot{
+width:319px;
+background-color: #6890ef;
+}
+
+.button1 {
+    /* background-color: #66E0F5; */ /* lightblue */
+    background-color: #4ec1e7;
+	border: none;
+/*     color: #391ad2; */
+	color:#563596;
+/*     padding: 20px; */
+	padding:15px 42px 15px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #563596; /* purple */
+    border: none;
+    color: white;
+    padding:15px 28px 15px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button3 {border-radius: 8px;}
+
+.foottr_space{
+margin-left: -15px;
+margin-right: -15px;
+margin-bottom: 0px;
+}
+
+.footing_image{
+      width: 100%;
+    height: 235px;
+    margin-top: 15px;
+    }
+
+  
+ .frontlogin{
+ margin-top:2px;
+ }
+
+@media screen and (min-width:410px) and (max-width:420px){
+		.heading{
+			margin-top:40px;
+		}
+		.loginbutton{
+			margin-left:50px;
+			margin-top:27px;
+		}
+		.footing_image{
+           width: 100%;
+            height: 334px;
+              margin-top: 50px;
+    }
+		
+
+}
+
+@media screen and (min-width:372px) and (max-width:379px){
+		.heading{
+			margin-top:32px;
+		}
+		.loginbutton{
+			margin-left:30px;
+		}
+		.footing_image{
+      width: 100%;
+    height: 235px;
+    margin-top: 15px;
+    }
+}
+
+@media screen and (min-width:315px) and (max-width:324px){
+		
+		.loginbutton{
+			margin-left:0px;
+			margin-right:0px;
+		}
+		.footing_image{
+      width: 100%;
+    height: 150px;
+    margin-top: 15px;
+    }
+}
+
+@media screen and (min-width:381px) and (max-width:385px){
+		
+		.loginbutton{
+			margin-left:35px;
+		}
+		.footing_image{
+     width: 100%;
+height: 295px;
+margin-top: 45px;
+    }
+} 
+
+@media screen and (min-width:358px) and (max-width:361px){
+		.heading{
+			margin-top:26px;
+		}
+		.loginbutton{
+			margin-left:23px;
+		}
+		.footing_image{
+    width: 100%;
+height: 290px;
+margin-top: 34px;
+    }
+}
+
+/* ------------style for ADD PAYMENT-------------------- */
+
+
+.verifyhead{
+	text-align:center;
+    margin-top: -20px;
+}
+
+.paymentnavbar{
+	background-color:#00c9ff;
+	padding-bottom:45px;
+}
+
+.paymnt{
+	margin: -21px -15px;
+	background-color: #6890ff;
+	padding-bottom: 2px;
+	color:white;
+	margin-top: 0px;
+       width: 1348px;
+margin-left: -15px;
+margin-right: -14px;
+	}
+
+.glyphicon{
+	top:4px;
+	font-size:20px;
+}
+
+.buffmilk{
+	text-align:center;
+	margin-top:32px;
+}
+
+.litre{
+	color:#2db0d4;
+}
+
+.milkbot{
+	/* height: 120px;
+	margin-top: 6px; */
+	width:123px;
+}
+
+.rightquantity{
+border-color: blue;
+margin-left: 127px;
+border-style: dashed none dashed none;
+width: 154px;
+height: 102px;
+margin-top: -104px;
+/* margin-left: 129px; */
+text-align: center;
+}
+
+.price{
+	margin-top: -13px;
+}
+
+.secondhead{
+	background-color: #6890ff;
+	padding-bottom: 2px;
+	color:white;
+	margin-left: -15px;
+	margin-right: -14px;
+        width:1348px;
+}
+
+.cart{
+	margin-top:5px;
+	
+}
+
+.head2{
+	text-align:left;
+    margin-top: 3px;
+	color:black;
+}
+
+.cart1{
+/* 	float:left; */
+	color:#2db0d4;
+} 
+
+.cart2{
+	float:right;
+	margin-top:-28px;
+}
+
+
+.address{
+	background-color: #6890ff;
+	color:white;
+	margin-left: -15px;
+	margin-right: -14px;
+          width:1350px;
+}
+
+.address1{
+	margin-top:-15px;
+	
+}
+
+.address2{
+	background-color: #6890ff;
+color: white;
+margin-left: -16px;
+margin-right: 0px;
+}
+
+.glyhome{
+	top:9px;
+	font-size: 26px;
+}
+
+.address2{
+		color:black;
+		margin-left: 17px;
+}
+
+.address3{
+	text-align:center;
+}
+
+.glytag{
+	top:10px;
+	font-size: 26px;
+	display: inline-block;
+	transform: rotate(90deg);
+}
+
+.walletfoot{
+	background-color: #6890ff;
+	color:white;
+	padding-right: 0px;
+	border-radius: 0px;
+	padding-bottom: 14px;
+	font-size: 19px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.walletfoot1{
+	font-size: 18px;
+}
+
+.glyarrow{
+	float:right;
+	margin-right: -24px;
+}
+
+@media screen and (min-width:410px) and (max-width:420px){
+		.milkbot{
+			width: 167px;
+		}
+		.price{
+			margin-top:15px;
+		}
+		.rightquantity{
+			margin-left: 179px;
+			width: 168px;
+			height: 136px;
+			margin-top: -140px;
+		}
+		.walletfoot{
+			padding-right: 0px;
+			padding-bottom: 30px;
+			padding-top: 27px;
+		}
+		.walletfoot1{
+			font-size:18px;
+		}
+		.glyarrow{
+			margin-right: -24px;
+			font-size: 23px;
+		}		
+}
+
+@media screen and (min-width:370px) and (max-width:377px){
+		.milkbot{
+			width: 155px;
+		}
+		.price{
+			margin-top:17px;
+		}
+		.rightquantity{
+			margin-left: 160px;
+			width: 160px;
+			height: 130px;
+			margin-top: -133px;
+		}
+		.walletfoot{
+			padding-right: 0px;
+			padding-bottom: 22px;
+		}
+		.walletfoot1{
+			font-size:18px;
+		}
+		.glyarrow{
+			margin-right: -24px;
+			font-size: 23px;
+		}		
+}
+
+@media screen and (min-width:310px) and (max-width:326px){
+		.milkbot{
+			width: 121px;
+		}
+		.price{
+			margin-top:4px;
+		}
+		.rightquantity{
+			margin-left: 128px;
+			width: 141px;
+			height: 99px;
+			margin-top: -102px;
+		}
+		.walletfoot {
+		    padding-right: 0px;
+		    padding-bottom: 22px;
+		}
+		.walletfoot1{
+			font-size:18px;
+		}
+		.glyarrow{
+			margin-right: -24px;
+			font-size: 21px;
+		}		
+}
+
+@media screen and (min-width:381px) and (max-width:385px){
+		.walletfoot{
+			padding-right: 0px;
+			padding-bottom: 22px;
+		}
+		.walletfoot1{
+			font-size:18px;
+		}
+		.glyarrow{
+			margin-right: -24px;
+			font-size: 21px;
+		}		
+}
+
+@media screen and (min-width:358px) and (max-width:364px){
+		.walletfoot{
+			padding-right: 0px;
+			padding-bottom: 22px;
+		}
+		.walletfoot1{
+			font-size:18px;
+		}
+		.glyarrow{
+			margin-right: -24px;
+			font-size: 21px;
+		}		
+}
+@media screen and (min-width:1078px) and (max-width:1084px){
+.walletfoot{
+			padding-right:0px;
+			padding-bottom: 22px;
+		}
+		.walletfoot1{
+			font-size:18px;
+		}
+
+}
+/*------------------ css for search products----------- */
+
+.searchpro{
+	margin: -21px -15px;
+	background-color: #6890ff;
+	color: white;
+	height: 80px;
+}
+
+.search{
+	text-align:left;
+	margin-top:16px;
+}
+
+.search1{
+	float: right;
+	margin-top: -25px;
+}
+
+.searchboxx{
+		background-color:#00c9ff;
+		margin-top:20px;
+		border-color:#00c9ff;
+		height:46px;
+}
+
+.searchbox2{
+	width: 200px;
+	margin-top: -10px;
+}
+
+.searchbut1{
+	float: right;
+margin-top: -32px;
+color: white;
+}
+
+
+.searchimg{
+	width:77px;
+	
+	
+}
+.searchimg2{
+	width: 77px;
+margin-left: 144px;
+margin-top: -85px;
+	
+}
+
+.drop{
+	margin-left: 27px;
+margin-top: -2px;
+}
+
+.drop2{
+	margin-left: 181px;
+	margin-top: -41px;
+}
+
+.rowimg2{
+	margin-left: 34px;
+margin-top: -12px;
+}
+
+.rowimg3{
+	margin-left: 35px;
+margin-top: 14px;
+}
+
+.backgrnd{
+			background-color:#00c9ff;
+			    padding-bottom: 0px;
+    margin-left: -17px;
+    margin-right: -14px;
+}
+
+.bttn_calender{
+	background-color:#6890ff;
+	height:76px;
+	width:104px;
+	border-color:#6890ff;
+}
+
+.bttn_sub{
+	background-color:#6890ff;
+	height:76px;
+	margin-left: -1px;
+	border-color: #6890ff;
+	width:109px;
+}
+
+.bttn_wallet
+{
+	background-color:#6890ff;
+	float:right;
+	width:104px;
+	height:76px;
+	border-color: #6890ff;
+}
+
+@media screen and (min-width:410px) and (max-width:416px){
+	.backgrnd{
+			margin-top:167px;
+			padding-bottom:0px;
+			}
+	.rowimg2 {
+    margin-left: 53px;
+			}
+	.drop {
+    margin-left: 63px;
+	}	
+	.drop2 {
+    margin-left: 209px;
+	}
+	.bttn_calender {
+    height: 86px;
+    width: 128px;
+	}
+	.bttn_sub {
+    height: 85px;
+    width: 145px;
+	}
+	.bttn_wallet {
+    float: right;
+    width: 135px;
+    height: 86px;
+	}
+	.searchbox2 {
+    width: 295px;
+	}
+}
+
+@media screen and (min-width:718px) and (max-width:980px){
+	.searchimg2{
+		margin-top: -112px;
+	}
+	.rowimg2{
+	margin-top:19px;
+	}
+}
+
+@media screen and (min-width:373px) and (max-width:378px){
+	.backgrnd{
+			margin-top:104px;
+			padding-bottom:0px;
+			}
+	.rowimg2 {
+    margin-left: 33px;
+			}
+	.drop {
+    margin-left: 45px;
+	}	
+	.drop2 {
+    margin-left: 192px;
+	}
+	.bttn_calender {
+    height: 80px;
+    width: 120px;
+	}
+	.bttn_sub {
+    height: 80px;
+    width: 120px;
+	
+	}
+	.bttn_wallet {
+    float: right;
+    width: 130px;
+    height: 80px;
+	}
+	.searchbox2 {
+    width: 255px;
+	}
+}
+
+@media screen and (min-width:381px) and (max-width:386px){
+	.backgrnd{
+			margin-top:77px;
+			padding-bottom:0px;
+			}
+	.rowimg2 {
+    margin-left: 33px;
+			}
+	.drop {
+    margin-left: 45px;
+	}	
+	.drop2 {
+    margin-left: 192px;
+	}
+	.bttn_calender {
+    height: 80px;
+    width: 125px;
+	}
+	.bttn_sub {
+    height: 80px;
+    width: 125px;
+	
+	}
+	.bttn_wallet {
+    float: right;
+    width: 130px;
+    height: 80px;
+	}
+	.searchbox2 {
+    width: 268px;
+	}
+}
+
+@media screen and (min-width:358px) and (max-width:363px){
+	.backgrnd{
+			margin-top:77px;
+			padding-bottom:0px;
+			}
+	.rowimg2 {
+    margin-left: 25px;
+			}
+	.drop {
+    margin-left: 45px;
+	}	
+	.drop2 {
+    margin-left: 192px;
+	}
+	.bttn_calender {
+    height: 80px;
+    width: 120px;
+	}
+	.bttn_sub {
+    height: 80px;
+    width: 118px;
+	
+	}
+	.bttn_wallet {
+    float: right;
+    width: 118px;
+    height: 80px;
+	}
+	.searchbox2 {
+    width: 240px;
+	}
+}
+
+@media screen and (min-width:318px) and (max-width:322px){
+	.backgrnd{
+			margin-top:54px;
+			padding-bottom:0px;
+			}
+
+/*------------------ css for mainpage----------- */
+
+.bodymenupage{
+	background-color:#000c;
+}
+
+.menunav{
+	background-color:#00c9ff;
+	height:58px;
+}
+
+.main{
+	width: 244px;
+	background-color: white;
+	padding-top: 22px;
+	margin-top: -20px;
+	margin-left: 0px;
+}
+
+.main_page_logo{
+height: 126px;
+margin-left: 39px;
+}
+
+.main_syntax{
+color:#6890ff;
+font-size:21px;	
+}
+
+.glymenu{
+	margin-right:8px;
+}
+
+
+
+
+
+
+
