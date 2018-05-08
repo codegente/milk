@@ -24,6 +24,17 @@ margin-bottom: 0px;
 	margin-top:10px;
         }
 
+  .one{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+     width: 20%;
+    margin-top: 5px;
+    margin-bottom: 12px;
+     
+}
+
 .redi{
 	border: 3px solid #00c9ff;
         border-radius: 7px;
@@ -41,6 +52,19 @@ margin-top: -7px;
 	          margin-top:0px;
 }
 @media screen and (min-width:318px) and (max-width:322px){
+
+   .one{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+     width: 20%;
+    margin-top: 5px;
+    margin-bottom: 12px;
+     
+}
+
+
 	.centr{
 	     width: 149px;
          height: 131px;
@@ -266,6 +290,18 @@ margin-top: 29px;
 margin-top:15px;
 margin-bottom: 15px;
 }
+
+.one{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+     width: 20%;
+    margin-top: 5px;
+    margin-bottom: 12px;
+     
+}
+
 	.centr1{
 	    width: 162px;
 height: 152px;
@@ -294,7 +330,7 @@ margin-top:-3px;
 .centr2{
 	width: 134px;
 height:96px;
-margin: 0 auto;
+margin: 20px auto;
       }
 
 	.fot_image2{
@@ -348,7 +384,7 @@ margin-top:15px;
 .centr2{
 	width: 205px;
 height: 199px;
-margin: 0 auto;
+margin: 20px auto;
       }
 	  .foot_imag2{
 	width: 100%;
@@ -371,7 +407,7 @@ margin-top: 15px;
 .centr2{
 	width: 205px;
 height: 177px;
-margin: 0 auto;
+margin: 20px auto;
       }
 	  .foot_imag2{
 	width: 100%;
@@ -381,6 +417,18 @@ margin-top: 23px;
 }
 
 @media screen and (min-width:318px) and (max-width:322px){
+
+.one{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+     width: 20%;
+    margin-top: 5px;
+    margin-bottom: 12px;
+     
+}
+
 .picktoping{
            margin-top:25px;
             }
@@ -394,7 +442,7 @@ color: white;
 .centr2{
 	width:167px;
 height: 136px;
-margin: 0 auto;
+margin: 20px auto;
       }
 	  .foot_imag2{
 	width: 100%;
@@ -416,7 +464,7 @@ color: white;
 .centr2{
 	width: 238px;
 height: 227px;
-margin: 0 auto;
+margin: 20px auto;
       }
 	  .foot_imag2{
 	width: 100%;
@@ -724,6 +772,9 @@ margin-right: -14px;
 padding-top: 0px;
 height: 44px;
 }
+
+
+
 
 
 

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>verify</title>
+       
+    
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+<style>
+
+      .one{
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+     width: 80%;
+    margin-top: 10px;
+    margin-bottom: 19px;
+       font-size: 15px;
+     
+}
+
+.sa {
+                   text-align: left;
+    width: 80%;
+    font-size: 15px;
+         
+
+   }
+
+
+</style>
+
+	
+	</head>
+	<body>
+<div class="container-fluid">
+
+<div class="row" style="
+    border-bottom: 1px solid #0000003b;
+    height:  33px;
+    margin-bottom: 7px;
+">
+<a href="http://codegente.com/milkapp1/searchproducts.html"> <i class="fa fa-arrow-left" aria-hidden="true" style="
+    font-size: 27px;
+    margin-left: 6px;
+    margin-top: 2px;
+"></i></a> 
+  <!----<h3 style="text-align:center;color: #6aaef7 ;margin-left: 124px;margin-top: 7px;">User Profile</h3>--> 
+</div>
+</div>
+
+	
+	  <div class="container-fluid"> 
+	<img src="img/logo r human final.png" class="img-responsive centr2">
+	<h5 class="picktoping"><b>Pick the taste of purity that suits your budget</b></h5>
+	
+	
+	<div class="registerform1" style="text-align: center;margin-top: 30px;">
+			<div class="form-group">
+
+                     <label for="usr"  class="sa">Address1</label>
+
+                   <input type="text" id="add1"  class="one" value="">
+
+                     </div>
+
+                  <div class="form-group">
+
+                     <label for="usr"  class="sa">Address2</label>
+
+                   <input type="text" id="add2"  class="one" value="">
+
+                     </div>
+
+		<div class="form-group">
+
+                     <label for="usr"  class="sa">Pincode</label>
+
+                   <input type="text" id="pin"  class="one" value="">
+
+                     </div>
+                       
+		</div>
+		
+</div>
+<div class="col-md-12">
+ <div class="row">
+	 
+	    <button type="submit" class="btn subb" id="update"  style="margin-top: 15px; margin-left: 170px;">Update</button>
+</div></div>		
+
+	
+	</body></html>
+
+<script>
+
+$.ajax({
+    url: 'http://codegente.com/aapp/session.php',
+    type: 'POST',
+    success: function(result) {
+        if (result == 'success'){   
+     
+
+
+      $("#update").click(function(){  
+var add1= $("#add1").val(); 
+var add2= $("#add2").val(); 
+var pin= $("#pin").val(); 
+   
+  
+
+       $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/profileupdate.php?email="+email+"&password="+password ,
+			data:"", 
+			success: function(data)
+			{     
+				
+				
+				                   window.location.href="login.html";                   
+                                                      
+	
+				}
+			});
+
+});
+
+        
+
+      
+      
+
+  }else{
+             window.location="login.html";
+        }
+    }
+});
+ 
+
+</script>
+
+
+
