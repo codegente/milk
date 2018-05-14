@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Car</title>
+        <title>humanfuel</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
@@ -15,347 +15,40 @@
         <link rel="stylesheet"  href="../plugins/c3/c3.min.css"  type="text/css"  />
 
         <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        
 
         <script src="assets/js/modernizr.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/style1.css" rel="stylesheet" type="text/css" />
 
-    </head>
+		
+</head>
 
+<body style="padding: 0;margin: 0;">
 
-    <body>
+<div>
+	<img src="img/HumanFuel.png" style="width:100%;">
 
-        <!-- Begin page -->
-        <div id="wrapper">
+</div>
 
-            <!-- Top Bar Start -->
-            <div class="topbar">
+</body>
 
-                <!-- LOGO -->
-                <div class="topbar-left">
-                    <!--<a href="index.html" class="logo"><span>Code<span>Fox</span></span><i class="mdi mdi-layers"></i></a>-->
-                    <!-- Image logo -->
-                    <a href="index.html" class="logo">
-                        <span>
-                            <p style ="color:white;margin-top:16px";><img src="cd3.png" alt="" height="35" width="200"> </p>
-                        </span>
-                        <i>
-                            <img src="cd3.png" alt="" width ="35"height="35">
-                        </i>
-                    </a>
-                </div>
-
-                <!-- Button mobile view to collapse sidebar menu -->
-                <div class="navbar navbar-default" role="navigation">
-                    <div class="container">
-
-                        <!-- Navbar-left -->
-                        <ul class="nav navbar-nav navbar-left nav-menu-left">
-                            <li>
-                                <button type="button" class="button-menu-mobile open-left waves-effect">
-                                    <i class="dripicons-menu"></i>
-                                </button>
-                            </li>
-                            
-
-                        </ul>
-
-                        <!-- Right(Notification) -->
-                        <ul class="nav navbar-nav navbar-right">
-                           
-                            <li>
-                              
-                                <ul class="dropdown-menu dropdown-menu-right dropdown-lg user-list notify-list">
-                                    <li class="list-group notification-list m-b-0">
-                                        <div class="slimscroll">
-                                           <!-- list item-->
-                                           <a href="javascript:void(0);" class="list-group-item">
-                                              <div class="media">
-                                                 <div class="media-left p-r-10">
-                                                    <em class="fa fa-diamond bg-primary"></em>
-                                                 </div>
-                                                 <div class="media-body">
-                                                    <h5 class="media-heading text-primary">A new order has been placed A new order has been placed</h5>
-                                                    <p class="m-0">
-                                                        There are new settings available
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </a>
-
-                                           <!-- list item-->
-                                           <a href="javascript:void(0);" class="list-group-item">
-                                              <div class="media">
-                                                 <div class="media-left p-r-10">
-                                                    <em class="fa fa-cog bg-warning"></em>
-                                                 </div>
-                                                 <div class="media-body">
-                                                    <h5 class="media-heading text-warning">New settings</h5>
-                                                    <p class="m-0">
-                                                        There are new settings available
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </a>
-
-                                           <!-- list item-->
-                                           <a href="javascript:void(0);" class="list-group-item">
-                                              <div class="media">
-                                                 <div class="media-left p-r-10">
-                                                    <em class="fa fa-bell-o bg-custom"></em>
-                                                 </div>
-                                                 <div class="media-body">
-                                                    <h5 class="media-heading text-custom">Updates</h5>
-                                                    <p class="m-0">
-                                                        There are <span class="text-primary font-600">2</span> new updates available
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </a>
-
-                                           <!-- list item-->
-                                           <a href="javascript:void(0);" class="list-group-item">
-                                              <div class="media">
-                                                 <div class="media-left p-r-10">
-                                                    <em class="fa fa-user-plus bg-danger"></em>
-                                                 </div>
-                                                 <div class="media-body">
-                                                    <h5 class="media-heading text-danger">New user registered</h5>
-                                                    <p class="m-0">
-                                                        You have 10 unread messages
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </a>
-
-                                            <!-- list item-->
-                                           <a href="javascript:void(0);" class="list-group-item">
-                                              <div class="media">
-                                                 <div class="media-left p-r-10">
-                                                    <em class="fa fa-diamond bg-primary"></em>
-                                                 </div>
-                                                 <div class="media-body">
-                                                    <h5 class="media-heading text-primary">A new order has been placed A new order has been placed</h5>
-                                                    <p class="m-0">
-                                                        There are new settings available
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </a>
-
-                                           <!-- list item-->
-                                           <a href="javascript:void(0);" class="list-group-item">
-                                              <div class="media">
-                                                 <div class="media-left p-r-10">
-                                                    <em class="fa fa-cog bg-warning"></em>
-                                                 </div>
-                                                 <div class="media-body">
-                                                    <h5 class="media-heading text-warning">New settings</h5>
-                                                    <p class="m-0">
-                                                        There are new settings available
-                                                    </p>
-                                                 </div>
-                                              </div>
-                                           </a>
-                                       </div>
-                                    </li>
-                                    <!-- end notification list -->
-                                </ul>
-                            </li>
-
-                            <li class="dropdown user-box">
-                                <a href="" class="dropdown-toggle waves-effect user-link" data-toggle="dropdown" aria-expanded="true">
-                                    <img src="cd3.png" height="35" width="200" alt="user-img" class="">
-                                </a>
-
-                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
-								<li><a href="forgot.html">Forget Password</a></li>
-                                    <li><a href="forgot.html">Change Password</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="login.html">Logout</a></li>
-                                </ul>
-                            </li>
-
-                        </ul> <!-- end navbar-right -->
-
-                    </div><!-- end container -->
-                </div><!-- end navbar -->
-            </div>
-            <!-- Top Bar End -->
-
-
-            <!-- ========== Left Sidebar Start ========== -->
-            <div class="left side-menu">
-                <div class="slimscroll-menu" id="remove-scroll">
-
-                    <!--- Sidemenu -->
-                    <div id="sidebar-menu">
-                        <!-- Left Menu Start -->
-                        <ul class="metisMenu nav" id="side-menu">
-                            <li class="menu-title">Navigation</li>
-                            <li>
-                                <a href="index.html"><i class="fi-air-play"></i> <span> Dashboard </span></a>
-                            </li>
-                            <li>
-							   <a href="user.html"><i class="fi-air-play"></i> <span>Total Registered User</span></a>
-                            </li>
-                            <li>
-							   <a href="#"><i class="fi-air-play"></i> <span>Add New Car </span></a>
-							    <ul>							
-							       <li><a href="addnewcar.html"> Add New Car</a></li>
-						           <li><a href="availablebooking.html">Available Booking </a></li>
-							       <li><a href="pendingbooking.html">Pending Booking </a></li>
-                                 
-							   </ul> 
-                            </li>
-							
-
-                           
-                        </ul>
-
-                    </div>
-                    <!-- Sidebar -->
-                    <div class="clearfix"></div>
-
-                </div>
-                <!-- Sidebar -left -->
-
-            </div>
-            <!-- Left Sidebar End -->
-
-
-
-            <!-- ============================================================== -->
-            <!-- Start right Content here -->
-            <!-- ============================================================== -->
-            <div class="content-page">
-                <!-- Start content -->
-                <div class="content">
-                    <div class="container">
-                        <div class="row">
-							<div class="col-xs-12">
-								<div class="page-title-box">
-                                    <h4 class="page-title">Dashboard</h4>
-                                    <ol class="breadcrumb p-0 m-0">
-                                        <li>
-                                            <a href="#">CarsDeal30</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Dashboard</a>
-                                        </li>
-                                    </ol>
-                                    <div class="clearfix"></div>
-                                </div>
-							</div>
-						</div>
-                        <!-- end row -->
-
-                        <div class="row">
-
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card-box widget-box-two widget-two-custom">
-                                    <i class="mdi mdi-currency-usd widget-two-icon"></i>
-                                    <div class="wigdet-two-content">
-                                        <p class="m-0 text-uppercase font-bold font-secondary text-overflow" title="Statistics">Total Revenue</p>
-                                        <h2 class=""><span><i class="mdi mdi-arrow-up"></i></span> <span data-plugin="counterup">65841</span></h2>
-                                        <p class="m-0">Jan - Apr 2017</p>
-                                    </div>
-                                </div>
-                            </div><!-- end col -->
-
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card-box widget-box-two widget-two-custom">
-                                    <i class="mdi mdi-account-multiple widget-two-icon"></i>
-                                    <div class="wigdet-two-content">
-                                        <p class="m-0 text-uppercase font-bold font-secondary text-overflow" title="Statistics">Total Unique Visitors</p>
-                                        <h2 class=""><span><i class="mdi mdi-arrow-up"></i></span> <span data-plugin="counterup">236521</span></h2>
-                                        <p class="m-0">Jan - Apr 2017</p>
-                                    </div>
-                                </div>
-                            </div><!-- end col -->
-
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card-box widget-box-two widget-two-custom">
-                                    <i class="mdi mdi-crown widget-two-icon"></i>
-                                    <div class="wigdet-two-content">
-                                        <p class="m-0 text-uppercase font-bold font-secondary text-overflow" title="Statistics">Number of Transactions</p>
-                                        <h2 class=""><span><i class="mdi mdi-arrow-up"></i></span> <span data-plugin="counterup">563698</span></h2>
-                                        <p class="m-0">Jan - Apr 2017</p>
-                                    </div>
-                                </div>
-                            </div><!-- end col -->
-
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card-box widget-box-two widget-two-custom">
-                                    <i class="mdi mdi-auto-fix widget-two-icon"></i>
-                                    <div class="wigdet-two-content">
-                                        <p class="m-0 text-uppercase font-bold font-secondary text-overflow" title="Statistics">Conversation Rate</p>
-                                        <h2 class=""><span><i class="mdi mdi-arrow-up"></i></span> <span data-plugin="counterup">2.07</span>%</h2>
-                                        <p class="m-0">Jan - Apr 2017</p>
-                                    </div>
-                                </div>
-                            </div><!-- end col -->
-
-                        </div>
-                        <!-- end row -->
-
-
-                    
-                        <!--- end row -->
-
-
-
-
-                    </div> <!-- container -->
-
-                </div> <!-- content -->
-
-                <footer class="footer text-right">
-                     2018- CarsDeal30.com
-                </footer>
-
-            </div>
-
-
-            <!-- ============================================================== -->
-            <!-- End Right content here -->
-            <!-- ============================================================== -->
-
-
-        </div>
-        <!-- END wrapper -->
-
-
-
-        <!-- jQuery  -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/metisMenu.min.js"></script>
-        <script src="assets/js/waves.js"></script>
-        <script src="assets/js/jquery.slimscroll.js"></script>
-
-        <!-- Counter js  -->
-        <script src="../plugins/waypoints/jquery.waypoints.min.js"></script>
-        <script src="../plugins/counterup/jquery.counterup.min.js"></script>
-
-        <!--C3 Chart-->
-        <script type="text/javascript" src="../plugins/d3/d3.min.js"></script>
-        <script type="text/javascript" src="../plugins/c3/c3.min.js"></script>
-
-        <!--Echart Chart-->
-		<script src="../plugins/echart/echarts-all.js"></script>
-
-        <!-- Dashboard init -->
-        <script src="assets/pages/jquery.dashboard.js"></script>
-
-        <!-- App js -->
-        <script src="assets/js/jquery.core.js"></script>
-        <script src="assets/js/jquery.app.js"></script>
-
-    </body>
 </html>
+
+<script>
+
+$(document).ready(function () {
+    // Handler for .ready() called.
+    window.setTimeout(function () {
+        location.href = "frontlogin.html";
+    }, 2000);
+});
+
+</script>

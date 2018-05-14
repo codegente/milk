@@ -12,11 +12,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-		<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link href="css/bootstarp.min.css" rel="stylesheet" id="bootstrap-css">
+			<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<link href="css/style.css" rel="stylesheet" type="text/css" />
-                 <link href="css/style1.css" rel="stylesheet" type="text/css" />
+		<link href="css/style1.css" rel="stylesheet" type="text/css" />
+                <link href="css/sidemenu.css" rel="stylesheet" type="text/css" />
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
@@ -27,45 +27,148 @@
 	</head>
 	<body>
 	
-	<!---<nav class="navbar"  style="background-color:#00c9ff;">
-	
-	</nav>-->
-	
-	<div class="container-fluid">
-	       <div class="panel panel-default def">
-             <!-- <div class="panel-body clr">
-			  <span class="glyphicon glyphicon-arrow-left" style="float:left;font-size:18px;"></span><b> ADD NEW PRODUCT</b>
-            <h3><b class="search1" style="margin-top: -40px;"> <a href="logout.php" style="color:  #fff;"> LOg Out 
-          <span class="glyphicon glyphicon-shopping-cart" style="color:white;"></span>
-        </a></b></h3>		
 
+	
+	
+<div class="head_nav heasder_top">
+
+						<a href="#" class=back_left><img src="img/left-arrow.png"></a>
+						<h3 class="verifyhead">ADD New Product</h3>	
+                   <h3 class="log_out"> <a href="logout.php" style="color:  #fff;"> <img src="img/logout.png"> 
+        </a></h3>	
 </div>
-                           
-          </div>
-
-		  <div class="panel panel-default ">
-              <div class="panel-body clrr">
-			    <div id="imaginary_container"> 
-                <div class="input-group stylish-input-group" >
-                    <input type="text" class="form-control searchh"  placeholder="SEARCH PRODUCTS">
-					
-					
-                </div>
-				<span class="glyphicon glyphicon-search searchbutton"></span>
-               </div>
-			  
-			</div>--->
-          </div>
+				
+				
+<div class="earchboxx">
+				<div class="searchboxx">
+					<input type="text" id="surr" class="form-control searchbox2" placeholder="Search products">
+					<span class="glyphicon glyphicon-search searchbut1"></span>
+					</div>
+</div>	
 	
-   <div class="main" id="main">	  
-	 
-	</div>	 
-		 	  
-		  
-		</div>  
+<form action="http://codegente.com/aapp/order.php">
+	
+   <div class="add_newproduct" >
+
+    <div class="product_img" id="imm">
+
+     		
+     	</div>	  
+	 	
+	 	<div class="input_quantity">
+	 	<div class="bufallo_perlt">
+	 		<h4 id="subcat"></h4>
+	 		<h5 id="rate"></h5>
+	 	</div>
+	 		<div class="hr_border"></div>
+	 			<div class="input-group input_grquantity">
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-minus"></span>
+              </button>
+          </span>
+        <div class="input_center">
+          <span class="input_name">Quantity</span>
+          <input type="text" name="quant[1]" class="input-number" value="1" min="1" max="100">
+          
+          <span class="Quantity_l">L</span>
+         
+		</div>
+          <span class="input-group-btn">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                  <span class="glyphicon glyphicon-plus"></span>
+              </button>
+          </span>
+      </div>
+	 		<div class="hr_border"></div>
+	 	</div>
+                       
+
+   		
+	</div>	
+	 	  
+	 	   
+	 	    
+<div class="btn_subsordelier">
+		
+				<button class="subscrive_btn">
+					Subscribe
+				</button>
+				<button class="deliver_btn">
+					Delever once 	 
+				</button>
+</div>
+
+<div class="subscrive_detail">
+<div class="hr_border"></div>
+	<div class="subscrive_detailin">
+			<div class="subscrive_detailleft">
+				<input type="date" name="date" class="form-control">
+			</div>
+			<div class="subscrive_detailright">
+				<a href="#"><span class="glyphicon glyphicon-calendar"></span></a>
+			</div>
+				
+	</div>
+	<div class="hr_border"></div>
+	
+	<div class="subscrive_detailin">
+			<div class="subscrive_detailleft">
+				<h4>Recharge/Top up</h4>
+				<h5>30 Deliveries</h5>
+				<span><input type="checkbox" value="yes" name="divl"> Not sore? Take a 3 or 6 days trial</span>
+			</div>
+			<div class="subscrive_detailright">
+				<a href="#"><span class="glyphicon glyphicon-flash"></span></a>
+			</div>
+				
+	</div>
+	<div class="hr_border"></div>
+	
+	<div class="subscrive_detailin">
+			<div class="subscrive_detailleft">
+				<h4>Repeat</h4>
+				<h5><input type="checkbox" value="every_day" name="days[]" > Every day</h5>
+				<div class="check_day">
+					<span><input type="checkbox" value="Mon" name="days[]"> Mon</span>
+					<span><input type="checkbox" value="Tue" name="days[]"> Tue</span>
+					<span><input type="checkbox" value="Wed" name="days[]"> Wed</span>
+					<span><input type="checkbox" value="Thu" name="days[]"> Thu</span>
+					<span><input type="checkbox" value="Fri" name="days[]"> Fri</span>
+					<span><input type="checkbox" value="Sat" name="days[]"> Sat</span>
+					<span><input type="checkbox" value="Sun" name="days[]"> Sun</span>
+				</div>
+			</div>
+			<div class="subscrive_detailright">
+				<a href="#"><span class="glyphicon glyphicon-refresh"></span></a>
+			</div>
+				
+	</div>
+	<div class="hr_border"></div>
+	
+	<div class="subscrive_detailin">
+			<div class="subscrive_detailleft">
+				<h4>Door bell</h4>
+				<h5><input type="checkbox" value="no" name="yes"> Don't ring</h5>
+				
+			</div>
+			<div class="subscrive_detailright">
+				<a href="#"><span class="glyphicon glyphicon-bell"></span></a>
+			</div>
+				
+	</div>
+		
+<div class="hr_border"></div>
+</div>
+	
+<div >
+	<input type="submit" name="submit" class="footer_bt footer_subs" ><span class="glyphicon glyphicon-arrow-right"></span>
+</div>	 	  
 	  
+</form>
 		  
-</body></html>
+</body>
+</html>
 
 <script>
 
@@ -81,16 +184,49 @@ url=document.URL;
 
 var pid=url.split("=")[1];
 
- $.ajax({ 
-			type:"POST",   
+    $.ajax({ 
+			type:"json",   
 			url: "http://codegente.com/aapp/addproductjs.php?pid="+pid,
 			data:"", 
 			success: function(data)
-			{   
-                              $("#main").append(data);   
-                              
+			{        
+                                   var dd=data;
+                              $("#imm").append(dd);
+                                                    
+	
 				}
-			}); 
+			});
+
+     $.ajax({ 
+			type:"json",   
+			url: "http://codegente.com/aapp/subcatjs.php?pid="+pid,
+			data:"", 
+			success: function(data)
+			{        
+                                   var ddd=data;
+                            
+                           $("#subcat").append(ddd);
+                                                    
+	
+				}
+			});
+ $.ajax({ 
+			type:"json",   
+			url: "http://codegente.com/aapp/ratejs.php?pid="+pid,
+			data:"", 
+			success: function(data)
+			{        
+                                   var dddd=data;
+                               
+
+
+                           $("#rate").append(dddd);
+                                                    
+	
+				}
+			});
+    
+ 
  
 
                  
@@ -100,12 +236,88 @@ var pid=url.split("=")[1];
     }
 });
 
+
 });
 
-$('#plus').click(function(){
 
-alert();
-})
- 
+</script>
+<script>  
+  $(document).ready(function(){   
+
+	$('.btn-number').click(function(e){ 
+    e.preventDefault();
+    
+    fieldName = $(this).attr('data-field');
+    type      = $(this).attr('data-type');
+    var input = $("input[name='"+fieldName+"']");
+    var currentVal = parseInt(input.val());
+    if (!isNaN(currentVal)) {
+        if(type == 'minus') {
+            
+            if(currentVal > input.attr('min')) {
+                input.val(currentVal - 1).change();
+                 
+            } 
+            if(parseInt(input.val()) == input.attr('min')) {
+                $(this).attr('disabled', true);
+              
+            }
+
+        } else if(type == 'plus') {
+
+            if(currentVal < input.attr('max')) {
+                input.val(currentVal + 1).change();
+            }
+            if(parseInt(input.val()) == input.attr('max')) {
+                $(this).attr('disabled', true);
+            }
+
+        }
+    } else {
+        input.val(0);
+    }
+});
+$('.input-number').focusin(function(){
+   $(this).data('oldValue', $(this).val());
+});
+$('.input-number').change(function() {
+    
+    minValue =  parseInt($(this).attr('min'));
+    maxValue =  parseInt($(this).attr('max'));
+    valueCurrent = parseInt($(this).val());
+    
+    name = $(this).attr('name');
+    if(valueCurrent >= minValue) {
+        $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the minimum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    if(valueCurrent <= maxValue) {
+        $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
+    } else {
+        alert('Sorry, the maximum value was reached');
+        $(this).val($(this).data('oldValue'));
+    }
+    
+    
+});
+$(".input-number").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+             // Allow: Ctrl+A
+            (e.keyCode == 65 && e.ctrlKey === true) || 
+             // Allow: home, end, left, right
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+
+});
 </script>
 	

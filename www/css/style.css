@@ -207,20 +207,34 @@ margin-bottom: 0px;
    }
 
 .redi1{
-	border: 3px solid #00c9ff;
-        border-radius: 7px;
-       font-size:15px;
+	border: 2px solid #8de1f8;
+        border-radius: 15px;
+       font-size:22px;
+	background: #f8f8f8;
+	color: #8de1f8;
+	height: 60px;line-height: 0px;
      }
-.butn1{
-	border-radius: 7px;
-width: 100%;
-background-color: #2424e7cc;
-color: white;
-font-size: 12px;
-margin-top: -7px;
-    }
-.registerform1{
-	          margin-top:0px;
+
+.butn1 {
+	width: 100%;
+	background-color: #28156e;
+	color: white;
+	margin-top: -5px;
+	height: 60px;
+	border-radius: 15px;
+	font-size: 22px;
+	font-weight: 600;
+}
+.butn1:hover {
+	color: white;
+}
+.registerform1 {
+	margin-top: 0px;
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	float: none;
+	margin-top: 10px;
 }
 @media screen and (min-width:382px) and (max-width:385px){
 .centr1{
@@ -285,6 +299,7 @@ height: 275px;
 margin-top: 29px;
 }
 }		
+/*
 @media screen and (min-width:318px) and (max-width:322px){
 	.pix1{
 margin-top:15px;
@@ -322,6 +337,7 @@ margin-top:-3px;
 }
 }
 
+*/
 
 
 
@@ -360,13 +376,24 @@ margin-top:15px;
 	   text-align:center; 
    
 }
- .codebox{
-	border-width: 0px 0px 2px 0px;
-	border-bottom-color: black;
-    width: 150px;
-    /* margin-left: 78px; */
-	text-align:center;
+.codebox {
+	border-bottom: 2px solid #8de1f8;
+	width: 180px;
+	text-align: center;
 	margin: 0 auto;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	box-shadow: none;
+	letter-spacing: 15px;
+	font-size: 24px;
+	text-align: center;
+	padding: 0 20px;
+	height: 30px;
+}
+.codebox:focus {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
 }
  
 
@@ -480,25 +507,31 @@ margin-top:27px;
 
 /* style glyph */
 .inner-addon .glyphicon {
-  position: absolute;
-  padding: 10px;
-  pointer-events: none; 
-    margin-top: -6px;
-font-size: 19px;
+	position: absolute;
+	padding: 10px;
+	pointer-events: none;
+	margin-top: -6px;
+	font-size: 30px;
 }
 
 
 
 /* align glyph */
-.left-addon .glyphicon  { left:  0px;}
+.left-addon .glyphicon {
+	left: 0px;
+	top: 10px;
+	width: 50px;
+	color: #8de1f8;
+}
 .right-addon .glyphicon { right: 0px;}
 
 /* add padding  */
-.left-addon input  { padding-left:  30px; }
+.left-addon input  { padding-left:  45px; }
 .right-addon input { padding-right: 30px; }
 
 
   
+
 
  .def{
 	margin-bottom:0px;
@@ -725,7 +758,7 @@ border-color: white;
 /* css for checkout*/
 
 .foor_size_top{
-margin-top: 36px;
+margin-top: 0px;
 font-size: 20px;
 }
 
@@ -737,7 +770,7 @@ font-size: 20px;
 .bordr-mov
 {
 border-radius: 13px;
-background-color: #f5f5f1;
+background-color: #f5f5f1;height: 50px;
 }
 
 .checkout-bttn{
