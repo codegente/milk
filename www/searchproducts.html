@@ -56,7 +56,7 @@
 				<span class="hamb-bottom"></span>
             </button>
             <div class="header_nav">
-        	<h4>18 April</h4>
+        	<h4 id="date"></h4>
         	
         	
         	<div class="cart_right">
@@ -81,18 +81,18 @@
      <li class="main_syntax"><a href="profile.html"><span class="glyphicon glyphicon-user glymenu"></span>PROFILE</a> </li>
 	      <li class="main_syntax"><a href="address.html"><span class="glyphicon glyphicon-home glymenu"></span>ADDRESS</a></li>
 		  <li class="hr_border"></li>
-		    <li class="main_syntax"><a href="addnewproduct.html"><span class="glyphicon glyphicon-plus glymenu"></span>ADD PRODUCT</a></li>
-	      <li class="main_syntax"><a href="#"><span class="glyphicon glyphicon-pause glymenu"></span>VACATION</a></li>
+		    <li class="main_syntax"><a href="searchproducts.html"><span class="glyphicon glyphicon-plus glymenu"></span>ADD PRODUCT</a></li>
+	      <li class="main_syntax"><a href="vacation.html"><span class="glyphicon glyphicon-pause glymenu"></span>VACATION</a></li>
 		 <li class="hr_border"></li>
-		 <li class="main_syntax"><a href="#"><span class="glyphicon glyphicon-calendar glymenu"></span>CALENDAR</a></li>
-	      <li class="main_syntax"><a href="#"><span class="glyphicon glyphicon-check glymenu"></span>SUBSCRIPTION</a></li>
-		  <li class="main_syntax"><a href="#"><span class="glyphicon glyphicon-credit-card glymenu"></span>WALLET</a></li>
+		 <li class="main_syntax"><a href="clnder.html"><span class="glyphicon glyphicon-calendar glymenu"></span>CALENDAR</a></li>
+	      <li class="main_syntax"><a href="searchproducts.html"><span class="glyphicon glyphicon-check glymenu"></span>SUBSCRIPTION</a></li>
+		  <li class="main_syntax"><a href="wallet.html"><span class="glyphicon glyphicon-credit-card glymenu"></span>WALLET</a></li>
 
 		 <li class="hr_border"></li>
 		 <li class="main_syntax"><a href="aboutus.html"><span class="glyphicon glyphicon-folder-open glymenu"></span>ABOUT</a></li>
-	      <li class="main_syntax"><a href=""><span class="glyphicon glyphicon-earphone glymenu"></span>CALL US</a></li>
+	      <li class="main_syntax"><a href="#"><span class="glyphicon glyphicon-earphone glymenu"></span>CALL US</a></li>
 		  <li class="hr_border"></li>
-		  <li class="main_syntax"><a href="#"><span class="glyphicon glyphicon-lock glymenu"></span>LOGOUT</a></li>
+		  <li class="main_syntax"><a href="http://codegente.com/aapp/logout.php"><span class="glyphicon glyphicon-lock glymenu"></span>LOGOUT</a></li>
 	</ul>
 		 
             
@@ -126,17 +126,19 @@
 	-->
 	
 	<ul>
-		<li class="active">
-			<button type="button"><span class="glyphicon glyphicon-calendar"></span>
-	<h6 class="calendr">Calander</h6></button>
-		</li>
-		<li>
+	
+	      <li class="active">
 			<button type="button"><span class="glyphicon glyphicon-check"></span>
 	<h6 class="calendr">Subscription</h6></button>
 		</li>
 		<li>
-			<button type="button"><span class="glyphicon glyphicon-credit-card"></span>
-	<h6 class="calendr">Wallet</h6></button>
+			<a href="clnder.html"><button type="button"><span class="glyphicon glyphicon-calendar"></span>
+	<h6 class="calendr">Calander</h6></button></a>
+		</li>
+		
+		<li>
+			<a href="wallet.html"><button type="button"><span class="glyphicon glyphicon-credit-card"></span>
+	<h6 class="calendr">Wallet</h6></button></a>
 		</li>
 	</ul>
 	
@@ -150,6 +152,21 @@
 </html>
 
 <script>
+$(document).ready(function () {
+
+ $.ajax({  
+			type:"POST",   
+			url: "http://codegente.com/aapp/date.php",
+			data:"", 
+			success: function(data)
+			{  
+                              $("#date").append(data); 
+                              
+				}
+			});
+ 
+ 
+}); 
 
   $(document).ready(function () {
   var trigger = $('.hamburger'),

@@ -22,7 +22,7 @@
 	
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 	
-<style>
+	<style>
 
       .one{
   border: 0;
@@ -44,9 +44,7 @@
 
    }
 
-
-</style>	
-
+</style>
 	
 	</head>
 	<body>
@@ -110,10 +108,10 @@
 	 	    
 <div class="btn_subsordelier">
 		
-				<button class="subscrive_btn">
+				<button class="deliver_btn" id="dilv">
 					Subscribe
 				</button>
-				<button class="deliver_btn" id="dilv">
+				<button class="subscrive_btn" >
 					Delever once 	 
 				</button>
 </div>
@@ -131,53 +129,11 @@
 	</div>
 	<div class="hr_border"></div>
 	
-	<div class="subscrive_detailin">
-			<div class="subscrive_detailleft">
-				<h4>Recharge/Top up</h4>
-				<h5>30 Deliveries</h5>
-				<span><input type="checkbox" value="yes" name="divl"> Not sore? Take a 3 or 6 days trial</span>
-			</div>
-			<div class="subscrive_detailright">
-				<a href="#"><span class="glyphicon glyphicon-flash"></span></a>
-			</div>
-				
-	</div>
-	<div class="hr_border"></div>
 	
-	<div class="subscrive_detailin">
-			<div class="subscrive_detailleft">
-				<h4>Repeat</h4>
-				<h5><input type="checkbox" value="every_day" name="days[]" > Every day</h5>
-				<div class="check_day">
-					<span><input type="checkbox" value="Mon" name="days[]"> Mon</span>
-					<span><input type="checkbox" value="Tue" name="days[]"> Tue</span>
-					<span><input type="checkbox" value="Wed" name="days[]"> Wed</span>
-					<span><input type="checkbox" value="Thu" name="days[]"> Thu</span>
-					<span><input type="checkbox" value="Fri" name="days[]"> Fri</span>
-					<span><input type="checkbox" value="Sat" name="days[]"> Sat</span>
-					<span><input type="checkbox" value="Sun" name="days[]"> Sun</span>
-				</div>
-			</div>
-			<div class="subscrive_detailright">
-				<a href="#"><span class="glyphicon glyphicon-refresh"></span></a>
-			</div>
-				
-	</div>
-	<div class="hr_border"></div>
+
 	
-	<div class="subscrive_detailin">
-			<div class="subscrive_detailleft">
-				<h4>Door bell</h4>
-				<h5><input type="checkbox" value="no" name="yes"> Don't ring</h5>
-				
-			</div>
-			<div class="subscrive_detailright">
-				<a href="#"><span class="glyphicon glyphicon-bell"></span></a>
-			</div>
-				
-	</div>
-		
-<div class="hr_border"></div>
+	
+
 </div>
 	
 <div >
@@ -248,7 +204,7 @@ var pid=url.split("=")[1];
            
              $("#dilv").click(function(){
                            
-                            window.location.href="deliver.html?pid="+pid;
+                            window.location.href="addnewproduct.html?id="+pid;
                         
                  });
  
