@@ -60,9 +60,9 @@
         	
         	
         	<div class="cart_right">
-        		<span class="glyphicon glyphicon-shopping-cart"></span>
+        		<!--<span class="glyphicon glyphicon-shopping-cart"></span>
         		
-        		<span class="right_crt">08</span>
+        		<span class="right_crt">08</span>--->
         	</div>
         </div>
            
@@ -205,11 +205,13 @@ $(document).ready(function () {
 $(document).ready(function(e) {  
 
      $.ajax({ 
-    url: 'http://codegente.com/aapp/session.php',
-    type: 'POST',
-    success: function(result) {
-        if (result == 'success'){   
+              url: 'http://codegente.com/aapp/cheackcokkies.php',
+              type: 'POST',
+               success: function(result) {
 
+                                                  var ss=result.split(",")[0];
+        if (ss== 'set'){  
+      
 
        $.ajax({  
 			type:"POST",   
@@ -224,7 +226,7 @@ $(document).ready(function(e) {
 
 
 }else{
-             window.location="login.html";
+            //window.location="login.html";
         }
     }
 });

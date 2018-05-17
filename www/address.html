@@ -55,7 +55,7 @@
 
 						<a href="javascript: history.go(-1)" class=back_left><img src="img/left-arrow.png"></a>
 						<h3 class="verifyhead">Address</h3>	
-                   <h3 class="log_out"> <a href="logout.php" style="color:  #fff;"> <img src="img/logout.png">
+                   <h3 class="log_out"> <a href="http://codegente.com/aapp/logout.php" style="color:  #fff;"> <img src="img/logout.png">
         </a></h3>	
 </div>
 
@@ -121,6 +121,26 @@ $.ajax({
     type: 'POST',
     success: function(result) {
         if (result == 'success'){   
+
+
+
+                       $.ajax({ 
+			type:"POST",   
+			url: "http://codegente.com/aapp/fetchaddress.php" ,
+			data:"", 
+			success: function(data)
+			{     
+				   var add1=data.split(",")[0]; 
+                                 var add2=data.split(",")[1];      
+				    var pincode=data.split(",")[2];              
+
+				         document.getElementById('add1').value=add1;                 
+                                            document.getElementById('add2').value=add2;      
+                                       document.getElementById('pin').value=pincode;    
+	
+				}
+			});
+
      
 
 
@@ -137,7 +157,7 @@ var pin= $("#pin").val();
 			data:"", 
 			success: function(data)
 			{     
-				
+				        
 				                  alert('Update Address Successfull');
 
 				                 window.history.back();                   

@@ -43,12 +43,40 @@
 </html>
 
 <script>
+$(document).ready(function () {  
+
+
+  $.ajax({ 
+                                 url: "http://codegente.com/aapp/cheackcokkies.php",
+                                type: "post",
+                                  data: "",
+                                success: function(data)
+			 {     
+                                var res = data.split(",")[0];
+                                 var sta = data.split(",")[1];
+                         
+                               if (res == 'set' && sta== 'active') { 
+				
+				 window.location.href="searchproducts.html";
+				                                        }
+
+                            else { 
+                                         window.location.href="frontlogin.html";   
+                                      }                                  
+	
+				}
+			}); 
+          });
 
 $(document).ready(function () {
+  
+                  
+
+
     // Handler for .ready() called.
     window.setTimeout(function () {
         location.href = "frontlogin.html";
-    }, 2000);
+    }, 20000000);
 });
 
 </script>
