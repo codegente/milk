@@ -117,7 +117,7 @@
 					Delever once 	 
 				</button>
 </div>
-<form action="http://codegente.com/aapp/order.php">
+<form id="theform">
 <div class="subscrive_detail">
 <div class="hr_border"></div>
 	<div class="subscrive_detailin">
@@ -181,7 +181,7 @@
 </div>
 	
 <div >
-	<input type="submit" name="submit" class="footer_bt footer_subs" ><span class="glyphicon glyphicon-arrow-right"></span>
+	<input type="submit" id="sub" name="submit" class="footer_bt footer_subs" ><span class="glyphicon glyphicon-arrow-right"></span>
 </div>	 	  
 	  
 </form>
@@ -245,7 +245,33 @@ var pid=url.split("=")[1];
 				}
 			});
     
-           
+
+      $(function () {
+
+        $('form').on('submit', function (e) {
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'get',
+            url: 'http://codegente.com/aapp/order.php',
+            data: $('form').serialize(),
+            success: function () {
+
+          
+                  window.location.href="http://codegente.com/milkapp79/checkout.html";
+          
+
+                
+              
+            }
+          });
+
+        });
+
+      });
+
+
              $("#dilv").click(function(){
                            
                             window.location.href="deliver.html?pid="+pid;
@@ -256,7 +282,7 @@ var pid=url.split("=")[1];
 
                  
 }else{
-             window.location="login.html";
+            // window.location="login.html";
         }
     }
 });
