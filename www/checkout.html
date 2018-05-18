@@ -39,8 +39,8 @@
 
 						<a href="javascript: history.go(-1)" class=back_left><img src="img/left-arrow.png"></a>
 						<h3 class="verifyhead">Checkout</h3>	
-                   <h3 class="log_out"> <a href="logout.php" style="color:  #fff;"> <img src="img/logout.png">
-        </a></h3>	
+                   <h3 class="log_out">  <img src="img/logout.png" id="im">
+        </h3>	
 </div>
 
 
@@ -143,6 +143,30 @@ document.getElementById("pp").value=pid;
         });
 
       });
+
+                              $("#im").click(function(){ 
+                           
+
+                          $.ajax({
+                                type: 'get',
+                                url: 'http://codegente.com/aapp/logout.php',
+                                data: '',
+                                success: function () {
+                                
+                                          
+                                     window.location.href="login.html";
+          
+
+                
+              
+                               }
+                           });
+                        
+                        
+                 });
+
+
+     
 
 
 

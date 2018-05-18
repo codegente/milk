@@ -82,19 +82,19 @@
 	 		<div class="hr_border"></div>
 	 			<div class="input-group input_grquantity">
           <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+              <button type="button" class="btn btn-default btn-number" disabled="disabled" id="min" data-type="minus" data-field="quant[1]">
                   <span class="glyphicon glyphicon-minus"></span>
               </button>
           </span>
         <div class="input_center">
           <span class="input_name">Quantity</span>
-          <input type="text" name="quant[1]" class="input-number" value="1" min="1" max="100">
-          
+          <input type="text" name="quant[1]" id="quu" class="input-number" value="1" min="1" max="100">
+        
           <span class="Quantity_l">L</span>
          
 		</div>
           <span class="input-group-btn">
-              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+              <button type="button" class="btn btn-default btn-number" data-type="plus" id="ppl" data-field="quant[1]">
                   <span class="glyphicon glyphicon-plus"></span>
               </button>
           </span>
@@ -123,6 +123,7 @@
 	<div class="subscrive_detailin">
 			<div class="subscrive_detailleft">
 				<input type="date" name="date" class="one">
+                                 <input type="hidden" name="dunt" id="qnn" value="">
 			</div>
 			<div class="subscrive_detailright">
 				<a href="#"><span class="glyphicon glyphicon-calendar"></span></a>
@@ -263,7 +264,7 @@ var pid=url.split("=")[1];
                   
                  url=document.URL;
 
-         var idd=url.split("=")[1];
+                   var idd=url.split("=")[1];
                   window.location.href="checkout.html?orderid="+oid;
           
 
@@ -275,6 +276,25 @@ var pid=url.split("=")[1];
         });
 
       });
+
+       
+          $("#ppl").click(function(){
+                           
+                          var aj=  $("#quu").val();
+                       
+                            $("#qnn").val(aj);     
+                            
+                                        
+                 });
+
+           $("#min").click(function(){
+                           
+                          var aj=  $("#quu").val();
+                    $("#qnn").val(aj);
+                        
+                 });
+
+
 
 
              $("#dilv").click(function(){
