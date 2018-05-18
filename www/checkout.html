@@ -46,7 +46,7 @@
 
 <div class="checkout_sec">
             
-                             <form action="http://codegente.com/aapp/checkoutjs.php">
+                             <form >
 				  <div class="form-group">
 				    <label for="email" class="foor_size_top">Name:</label>
 				    <input type="text" class="form-control bordr-mov" name="name" id="aa" value="">
@@ -110,6 +110,41 @@ document.getElementById("pp").value=pid;
 				               }
 			                 });
         
+
+
+                         $(function () {
+
+        $('form').on('submit', function (e) {
+
+          url=document.URL;
+
+             var oid=url.split("=")[1];
+           
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'get',
+            url: 'http://codegente.com/aapp/checkoutjs.php?orderid='+oid,
+            data: $('form').serialize(),
+            success: function () {
+                         
+                  
+                 
+
+                  window.location.href="addpayment.html?orderid="+oid;
+          
+
+                
+              
+            }
+          });
+
+        });
+
+      });
+
+
 
 }
 else{
