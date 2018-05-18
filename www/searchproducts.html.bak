@@ -92,7 +92,11 @@
 		 <li class="main_syntax"><a href="aboutus.html"><span class="glyphicon glyphicon-folder-open glymenu"></span>ABOUT</a></li>
 	      <li class="main_syntax"><a href="#"><span class="glyphicon glyphicon-earphone glymenu"></span>CALL US</a></li>
 		  <li class="hr_border"></li>
+<<<<<<< HEAD
 		  <li class="main_syntax" id="im"><span class="glyphicon glyphicon-lock glymenu"></span>LOGOUT</li>
+=======
+		  <li class="main_syntax" id="immgg"><span class="glyphicon glyphicon-lock glymenu"></span>LOGOUT</li>
+>>>>>>> 1bbd0d59fbe6aac0ff7872ade02f55dcd6758d62
 	</ul>
 		 
             
@@ -217,7 +221,7 @@ $(document).ready(function(e) {
                                           
                                                   var ss=result.split(",")[0];
                                                  var rs=result.split(",")[1];
-        if (ss== 'set'){  
+        if (ss== 'set' && rs=='active' ){  
       
 
        $.ajax({  
@@ -233,7 +237,11 @@ $(document).ready(function(e) {
 
 
 
+<<<<<<< HEAD
                    $("#im").click(function(){ 
+=======
+                   $("#immgg").click(function(){ 
+>>>>>>> 1bbd0d59fbe6aac0ff7872ade02f55dcd6758d62
                            
 
                           $.ajax({
@@ -258,7 +266,7 @@ $(document).ready(function(e) {
 
 
 }else{
-            window.location="login.html";
+            //window.location="login.html";
         }
     }
 });
