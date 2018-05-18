@@ -58,8 +58,8 @@
 
 						<a href="javascript: history.go(-1)" class=back_left><img src="img/left-arrow.png"></a>
 						<h3 class="verifyhead">ADD New Product</h3>	
-                   <h3 class="log_out"> <a href="http://codegente.com/aapp/logout.php" style="color:  #fff;"> <img src="img/logout.png"> 
-        </a></h3>	
+                   <h3 class="log_out">  <img src="img/logout.png" id="immgg"> 
+        </h3>	
 </div>
 				
 				
@@ -278,7 +278,13 @@ var pid=url.split("=")[1];
                         
                  });
  
+
  
+          $("#immgg").click(function(){  alert();
+                           
+                            window.location.href="http://codegente.com/aapp/logout.php";
+                        
+                 });
 
                  
 }else{
