@@ -27,6 +27,11 @@
 		
 		<link href="css/style1.css" rel="stylesheet" type="text/css" />
                 <link href="css/sidemenu.css" rel="stylesheet" type="text/css" />
+          
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 
 
 
@@ -96,7 +101,7 @@ url=document.URL;
 
 var order=url.split("=")[1];
 
- $.ajax({ 
+               $.ajax({ 
 			type:"POST",   
 			url: "http://codegente.com/aapp/addpaymentjs.php?orderid="+order,
 			data:"", 
@@ -112,7 +117,6 @@ var order=url.split("=")[1];
 
 
                  $("#im").click(function(){ 
-                           
 
                           $.ajax({
                                 type: 'get',
@@ -123,25 +127,36 @@ var order=url.split("=")[1];
                                           
                                      window.location.href="login.html";
           
-
-                
               
                                }
-                           });
-                        
-                        
-                 });
+                           });        
+                     });
 
- 
-   $('#ppro').click(function(){ 
-alert();
-            
-                });
+                
+               
+      
+  
 
-}else{
+}
+else{
             // window.location="login.html";
         }
     }
+
+
+
 });
+
  });
+
+</script>
+
+<script>
+function myFunction() {
+
+  urll=document.URL;
+
+var orderid=urll.split("=")[1];
+                          window.location.href="http://codegente.com/aapp/pay/index.php?orderid="+orderid;
+}
 </script>
