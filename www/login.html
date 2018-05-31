@@ -74,9 +74,8 @@ var password = $("#password").val();
 			url: "http://codegente.com/aapp/loginjs.php?id="+email+"&pass="+password ,
 			data:"", 
 			success: function(data)
-			{     
-
-                          var url=data;
+			{ 
+                           var url=data;
                           var aa=url.split(",")[0];
                         var dataa=url.split(",")[1];
                                 alert(aa);

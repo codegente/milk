@@ -174,7 +174,7 @@ padding: 10px 15px;
 
 .hamburger {
   position: absolute;
-  top: 15px; 
+  top: 4px; 
   z-index: 999;
   display: block;
   width: 32px;

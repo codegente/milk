@@ -13,6 +13,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="css/bootstarp.min.css" rel="stylesheet" id="bootstrap-css">
+			<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link href="css/style1.css" rel="stylesheet" type="text/css" />
                 <link href="css/sidemenu.css" rel="stylesheet" type="text/css" />
@@ -127,7 +128,7 @@
 	<div class="subscrive_detailin">
 			<div class="subscrive_detailleft">
 				<input type="date" name="date" class="one">
-                                 <input type="hidden" name="dunt" id="qnn" value="1">
+                                 <input type="hidden" name="dunt" id="qnn" value="">
 			</div>
 			<div class="subscrive_detailright">
 				<a href="#"><span class="glyphicon glyphicon-calendar"></span></a>
@@ -139,9 +140,8 @@
 	<div class="subscrive_detailin">
 			<div class="subscrive_detailleft">
 				<h4>Recharge/Top up</h4>
-                                <input type="hidden" name="ho" id="ho" value="30">
-				<h5 ><span id="hshow" style="color: black;font-size: 19px;">30</span> Deliveries</h5>
-				
+				<h5>30 Deliveries</h5>
+				<span><input type="checkbox" value="yes" name="divl"> Not sore? Take a 3 or 6 days trial</span>
 			</div>
 			<div class="subscrive_detailright">
         <button type="button" class="btn waves-effect waves-light" data-toggle="modal" data-target="#recharge-bottom-popup"><span class="glyphicon glyphicon-flash"></span></button>
@@ -153,12 +153,19 @@
 	<div class="subscrive_detailin">
 			<div class="subscrive_detailleft">
 				<h4>Repeat</h4>
-                                 <input type="hidden" name="do" id="do" value="every_day">
-				<h5 id="dshow">every_day</h5>
-				
+				<h5><input type="checkbox" value="every_day" name="days[]" > Every day</h5>
+				<div class="check_day">
+					<span><input type="checkbox" value="Mon" name="days[]"> Mon</span>
+					<span><input type="checkbox" value="Tue" name="days[]"> Tue</span>
+					<span><input type="checkbox" value="Wed" name="days[]"> Wed</span>
+					<span><input type="checkbox" value="Thu" name="days[]"> Thu</span>
+					<span><input type="checkbox" value="Fri" name="days[]"> Fri</span>
+					<span><input type="checkbox" value="Sat" name="days[]"> Sat</span>
+					<span><input type="checkbox" value="Sun" name="days[]"> Sun</span>
+				</div>
 			</div>
 			<div class="subscrive_detailright">
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#repeat-bottom-popup"><span class="glyphicon glyphicon-refresh"></span></button>
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-refresh"></span></button>
 			</div>
 				
 	</div>
@@ -183,9 +190,9 @@
 	<input type="submit" id="sub" name="submit" class="footer_bt footer_subs" >
 </div>	 	  
 	  
-
-
 </form>
+
+
 
 
 
@@ -209,20 +216,20 @@
           <div class="modal-body">
              <div class="rechrge_day">
 <label class="custom_check">
-  <input type="checkbox" >
-  <span class="checkmark" id="dil" >3 Deliveries</span>
+  <input type="checkbox" checked="checked">
+  <span class="checkmark">3 Deliveries</span>
 </label>
 <label class="custom_check">
-  <input type="checkbox"  >
-  <span class="checkmark" id="dil1">6 Deliveries</span>
+  <input type="checkbox">
+  <span class="checkmark">6 Deliveries</span>
 </label>
 <label class="custom_check">
-  <input type="checkbox"  >
-  <span class="checkmark" id="dil2">15 Deliveries</span>
+  <input type="checkbox">
+  <span class="checkmark">15 Deliveries</span>
 </label>
 <label class="custom_check">
-  <input type="checkbox"   >
-  <span class="checkmark" id="dil3">30 Deliveries</span>
+  <input type="checkbox">
+  <span class="checkmark">30 Deliveries</span>
 </label>
 </div>
           </div>
@@ -261,7 +268,7 @@
               <div class="repeat_sec_left">
 <label class="custom_check">
   <input type="checkbox" checked="checked">
-  <span class="checkmark" value="every_day" name="every" id="every">Every Day</span>
+  <span class="checkmark">Every Day</span>
 </label>
 <label class="custom_check">
   <input type="checkbox">
@@ -276,13 +283,13 @@
 
 <div class="repeat_sec_right">
   <div class="check_day">
-          <span><input type="checkbox" value="Mon" name="days"> Mon</span>
-          <span><input type="checkbox" value="Tue" name="days"> Tue</span>
-          <span><input type="checkbox" value="Wed" name="days"> Wed</span>
-          <span><input type="checkbox" value="Thu" name="days"> Thu</span>
-          <span><input type="checkbox" value="Fri" name="days"> Fri</span>
-          <span><input type="checkbox" value="Sat" name="days"> Sat</span>
-          <span><input type="checkbox" value="Sun" name="days"> Sun</span>
+          <span><input type="checkbox" value="Mon" name="days[]"> Mon</span>
+          <span><input type="checkbox" value="Tue" name="days[]"> Tue</span>
+          <span><input type="checkbox" value="Wed" name="days[]"> Wed</span>
+          <span><input type="checkbox" value="Thu" name="days[]"> Thu</span>
+          <span><input type="checkbox" value="Fri" name="days[]"> Fri</span>
+          <span><input type="checkbox" value="Sat" name="days[]"> Sat</span>
+          <span><input type="checkbox" value="Sun" name="days[]"> Sun</span>
         </div>
 </div>
 
@@ -291,7 +298,7 @@
   
           <!--Footer-->
            <div class="modal-footer justify-content-center">
-              <a type="button" id="add" class="btn btn-apply">Apply</a>
+              <a type="button" class="btn btn-apply">Apply</a>
           </div> 
       </div>
       <!--/.Content-->
@@ -303,64 +310,6 @@
 		  
 </body>
 </html>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $("#add").click(function(){
-            var favorite = [];
-            $.each($("input[name='days']:checked"), function(){            
-                favorite.push($(this).val());
-            });
-                 var day= favorite.join(", ");
-                $("#do").val(day)
-                $( "#dshow" ).empty();
-                $( "#dshow" ).append(day);
-           
-        });
-
-
-
-    });
-</script>
-
-<script type="text/javascript">
-    $(document).ready(function() {
-       
-          $('#dil').on('click', function(){
-            var ffc= $('#dil').text();
-                var ppo=ffc.split(" ")[0];
-                $('#ho').val(ppo);
-               $('#hshow').empty();
-                $('#hshow').append(ppo);
-         });
-     
-        $('#dil1').on('click', function(){
-            var ffcc= $('#dil1').text();
-               var ppo=ffcc.split(" ")[0];
-             $('#ho').val(ppo);
-              $('#hshow').empty();
-                $('#hshow').append(ppo);
-         });
-
-         $('#dil2').on('click', function(){
-            var ffcc= $('#dil2').text();
-            var ppo=ffcc.split(" ")[0];
-            $('#ho').val(ppo);
-            $('#hshow').empty();
-                $('#hshow').append(ppo);
-         });
-
-         $('#dil3').on('click', function(){
-            var ffcc= $('#dil3').text();
-            var ppo=ffcc.split(" ")[0];
-             $('#ho').val(ppo);
-             $('#hshow').empty();
-                $('#hshow').append(ppo);
-         });
-
-    });
-</script>
-
 
 <script>
 
