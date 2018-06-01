@@ -61,8 +61,7 @@
 	<img src="img/logo.png" class="logoo">
 	<h5 class="heading"  style="margin-top: 40px;"> <b>YOUR TRASACTIONS HISTORY</b></h5>
 	
-	<h5 class="heading"> <b> <i class="fa fa-inr" aria-hidden="true"></i> 0.0 
-</b></h5>
+	
 			
       <div class="registerform1" style="text-align: center;margin-top: 10px;">
 		  
@@ -70,13 +69,7 @@
                        
 		</div>
                   
-                  
-
-                  
-
-		
-                       
-		</div>
+        </div>
 		
            
   <table class="table table-bordered">
@@ -84,30 +77,14 @@
       <tr>
         <th>TRASACTIONS ID</th>
         <th>DATE</th>
-        <th>PRODUCT NAME</th>
-         <th>PRODUCT PRICE</th>
-          
+        <th>PRODUCT PRICE</th>
+         <th>PRODUCT NAME</th>
+         <th>STATUS</th> 
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td>123</td>
-        <td>10/05/2018</td>
-        <td>GOLD</td>
-         <td>10 INR</td>
-      </tr>
-      <tr>
-        <td>123</td>
-        <td>10/05/2018</td>
-        <td>GOLD</td>
-         <td>10 INR</td>
-      </tr>
-      <tr>
-        <td>123</td>
-        <td>10/05/2018</td>
-        <td>GOLD</td>
-         <td>10 INR</td>
-      </tr>
+    <tbody id="view">
+     
+     
     </tbody>
   </table>
 
@@ -152,37 +129,24 @@ $.ajax({
      
           url=document.URL;
       
-
-                              
-
-
-      $("#oo").click(function(){  
-var start = $("#sdate").val(); 
-var end = $("#edate").val(); 
-   
-  
-
+                               
        $.ajax({ 
 			type:"POST",   
-			url: "http://codegente.com/aapp/vacationjs.php?start="+start+"&end="+end ,
+			url: "http://codegente.com/aapp/history.php",
 			data:"", 
 			success: function(data)
 			{     
-				   alert('Vacation Dates Successfuly Update');
+				   var dd=data;
+                              $("#view").append(dd);
 				
-				                  window.location.href="searchproducts.html";                   
-                                                      
+				                                    
+                                                  
 	
 				}
 			});
 
-});
-
-        
-
+           
       
-      
-
   }else{
            //  window.location="login.html";
         }

@@ -36,7 +36,7 @@
 									 <div class="inner-addon left-addon">
 						<i class="glyphicon glyphicon-envelope"></i>      
 						 <input type="text" id="email" name="email" class="form-control redi1" placeholder=" Email ID*" />
-									</div>
+	<input type="hidden" id="rrn">								</div>
 								 </div>
 						<div class="form-group">
 							 <div class="inner-addon left-addon">
@@ -62,12 +62,12 @@
 
 
 
-
 <script>
 
 $("#login").click(function(){  
 var email = $("#email").val(); 
 var password = $("#password").val(); 
+
 
        $.ajax({ 
 			type:"POST",   
@@ -78,18 +78,39 @@ var password = $("#password").val();
                            var url=data;
                           var aa=url.split(",")[0];
                         var dataa=url.split(",")[1];
-                                alert(aa);
-                               if ($.trim(aa) == 'successfuly login') { 
-				
-				 window.location.href="verify.html?otp="+ dataa;
+                         var mobile=url.split(",")[2];    
+                                if(aa.includes("successfuly login"))
+                              {     alert(aa);
+   
+                              $.ajax({ 
+                       
+                           url: "https://webupdate.website/apifolder/smsapi.php?mobile="+mobile+"&otp="+dataa,
+                           data: "",
+                        success: function(data){
+             
+            
+        
+                        }
+                                 
+                                     
+                    }); 
+                                  window.location.href = "verify.html?otp="+dataa ; 
 				                                        }
 
                             else { 
                                          alert('email and password not currect');   
-                                      }                                  
+                                      }           
+
+            
+
+                                                             
 	
 				}
-			});
+			
+        
+});
+
+                    
 
 });
 

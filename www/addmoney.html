@@ -59,21 +59,22 @@
 
   <div class="about_sec">
 	<img src="img/logo.png" class="logoo">
-	<h5 class="heading"  style="margin-top: 40px;"> <b>WALLET BALANCE</b></h5>
 	
-	<h5 class="heading" > <b > <i class="fa fa-inr" aria-hidden="true"></i> <span id="ddo"> 0.0 </span>
-</b></h5>
-			
+	<div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+	 <input type="text" class="form-control" id="addm" style="margin-top:50px;">
+	</div>
+	<div class="col-sm-4"></div>
+	</div>		
       <div class="registerform1" style="text-align: center;margin-top: 10px;">
 		  
 
                       <div class="form-group">
-                      <button type="submit" class="btn button2" id="oo">ADD MONEY</button>
+                      <button type="submit" class="btn button2" id="oo" style="margin-top: 20px;">ADD MONEY</button>
 		     </div>
 		     
-		     <div class="form-group" style="margin-top: 10px;">
-                      <button type="submit" class="btn button2" id="hoh" style="padding: 0px 10px 0px 15px;">VIEW TRASACTIONS</button>
-		     </div>
+		     
                        
 		</div>
                   
@@ -132,38 +133,34 @@ $.ajax({
      
           url=document.URL;
       
-         
-                   $.ajax({ 
+
+                              
+
+
+      $("#oo").click(function(){  
+var am= $("#addm").val(); 
+
+   
+  
+
+       $.ajax({ 
 			type:"POST",   
-			url: "http://codegente.com/aapp/walletjs.php",
+			url: "http://codegente.com/aapp/addmoneyjs.php?money="+am ,
 			data:"", 
 			success: function(data)
-			{ 
-                               var amo=data;
-                                   $('#ddo').empty();
-                                 $('#ddo').append(amo);
-                                                              
+			{     
+				  var cc=data;
+				
+				             window.location.href="addiframe.html?code="+cc;                   
+                                                      
 	
 				}
 			});
 
-
-
-
-      $("#oo").click(function(){  
-
- 	 			
-				                  window.location.href="addmoney.html";                   
-
 });
 
         
-$("#hoh").click(function(){  
 
- 	 			
-				                  window.location.href="history.html";                   
-
-});
       
       
 

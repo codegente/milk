@@ -49,14 +49,18 @@
 <script>
 $( document ).ready(function() { 
 
+
   urll=document.URL;
 
-var orderid=urll.split("=")[1];
+var codeid=urll.split("=")[1];
 
-var url= 'https://www.codegente.com/ccav/index.php?orderid='+orderid ;
+var url= 'https://www.codegente.com/addmoney/index.php?code='+codeid ;
+
 
 $('#ff').attr('src',url );
                      
+
+
 
 });
 </script>

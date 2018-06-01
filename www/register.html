@@ -44,7 +44,7 @@ session_start();
 	<div class="registerform1" >
 		
 			
-					<form action="http://codegente.com/aapp/registerjs.php">	
+					<form id="forrm">	
 								<div class="form-group">
 						   <div class="inner-addon left-addon">
 							  <i class="glyphicon glyphicon-phone"></i>      
@@ -82,6 +82,39 @@ session_start();
 	</body>
 
 <script>
+
+$(function () {
+
+        $('form').on('submit', function (e) {
+
+        var oid = Math.floor((Math.random() * 100000));
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'get',
+            url: 'http://codegente.com/aapp/registerjs.php',
+            data: $('form').serialize(),
+            success: function () {
+                         
+                  
+                 url=document.URL;
+
+                   var idd=url.split("=")[1];
+                  window.location.href="login.html";
+          
+
+                
+              
+            }
+          });
+
+        });
+
+      });
+
+
+
 function myFunction() {
     var x = document.getElementById("myInput");
     if (x.type === "password") {
