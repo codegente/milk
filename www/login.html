@@ -79,30 +79,22 @@ var password = $("#password").val();
                           var aa=url.split(",")[0];
                         var dataa=url.split(",")[1];
                          var mobile=url.split(",")[2];    
+                          
                                 if(aa.includes("successfuly login"))
                               {     alert(aa);
    
-                              $.ajax({ 
-                       
-                           url: "https://webupdate.website/apifolder/smsapi.php?mobile="+mobile+"&otp="+dataa,
-                           data: "",
-                        success: function(data){
-             
-            
-        
-                        }
-                                 
-                                     
-                    }); 
-                                  window.location.href = "verify.html?otp="+dataa ; 
-				                                        }
+                             
+
+                                   window.location="verify.html?mobile="+mobile+"&otp="+dataa;
+                                  
+                           }
 
                             else { 
                                          alert('email and password not currect');   
                                       }           
 
             
-
+                             
                                                              
 	
 				}

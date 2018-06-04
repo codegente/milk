@@ -32,7 +32,7 @@
 	
 			<h2 class="enter_code">ENTER CODE</h2>
 			
-			<h4>We have send you and SMS on <br><span class="mobile_no">+91 9876543210</span> with a 4-digit <br>Verification code(OTP)</h4>
+			<h4>We have send you and SMS on <br><span class="mobile_no">+91<h4 id="mon">9876543210</h4></span> with a 4-digit <br>Verification code(OTP)</h4>
 	
 	<div class="verification_form">
 			<div class="form-group">
@@ -64,7 +64,7 @@ $.ajax({
           url=document.URL;
       var ooo=url.split("=")[1];
 
-       document.getElementById('otpp').value=ooo;
+      // document.getElementById('otpp').value=ooo;
 
                                $("#oo").click(function(){  
                                var otp= $("#otpp").val(); 
@@ -97,6 +97,33 @@ $.ajax({
     }
 });
  
+
+$(document).ready(function() { 
+
+      urll=document.URL;
+     var mobile=urll.split("=")[1];
+       var dataa=urll.split("=")[2];
+      $('#mon').val(mobile);
+
+   $.ajax({ 
+                            type:"POST", 
+                           url: "https://webupdate.website/apifolder/newsms.php?mobile="+mobile+"&otp="+dataa,
+                           data:"",  
+			success: function(data)
+			{
+                                   
+                        
+                        }
+                                
+                                    
+                    }); 
+
+
+     
+});
+
+ 
+
 
 </script>
 
