@@ -55,19 +55,14 @@
 
 <script>
 
-$.ajax({
-    url: 'http://codegente.com/aapp/session.php',
-    type: 'POST',
-    success: function(result) {
-        if (result == 'success'){   
-     
-          url=document.URL;
-      var ooo=url.split("=")[1];
+  
+    $(document).ready(function() {   
 
-      // document.getElementById('otpp').value=ooo;
+      
 
-                               $("#oo").click(function(){  
-                               var otp= $("#otpp").val(); 
+             $("#oo").click(function(){  
+             
+                  var otp= $("#otpp").val(); 
                   
 
        $.ajax({ 
@@ -79,7 +74,7 @@ $.ajax({
                                
                                if(data=='1'){   
 				
-				 window.location="searchproducts.html" ;
+				 window.location="login.html" ;
 				
 			                                              }
                             else{  alert('otp not match');   }                                  
@@ -90,38 +85,8 @@ $.ajax({
 
     });       
       
-
-  }else{
-            window.location="login.html";
-        }
-    }
 });
  
-
-$(document).ready(function() { 
-
-      urll=document.URL;
-     var mobile=urll.split("=")[1];
-       var dataa=urll.split("=")[2];
-      $('#mon').val(mobile);
-
-   $.ajax({ 
-                            type:"POST", 
-                           url: "https://webupdate.website/apifolder/newsms.php?mobile="+mobile+"&otp="+dataa,
-                           data:"",  
-			success: function(data)
-			{
-                                   
-                        
-                        }
-                                
-                                    
-                    }); 
-
-
-     
-});
-
  
 
 

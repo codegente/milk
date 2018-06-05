@@ -48,26 +48,26 @@ session_start();
 								<div class="form-group">
 						   <div class="inner-addon left-addon">
 							  <i class="glyphicon glyphicon-phone"></i>      
-							  <input type="text" name="mobile" class="form-control redi1" placeholder=" Mobile*"/>
+							  <input type="text" name="mobile" id="mom" class="form-control redi1" placeholder=" Mobile*"/>
 						   </div>
 						 </div>
 						<div class="form-group">
 									 <div class="inner-addon left-addon">
 									  <i class="glyphicon glyphicon-envelope"></i>      
-									  <input type="text" name="email" class="form-control redi1" placeholder=" Email ID*" />
+									  <input type="text" id="emmi" name="email" class="form-control redi1" placeholder=" Email ID*" />
 									</div>
 								 </div>
 					 <div class="form-group">
 											 <div class="inner-addon left-addon">
 											  <i class="glyphicon glyphicon-pencil"></i>      
-											  <input type="password" name="password" class="form-control redi1" placeholder=" Create Password*"/>
+											  <input type="password" id="pass" name="password" class="form-control redi1" placeholder=" Create Password*"/>
 											  
 											 <span class="show_psd"> Show </span>
 											</div>
 										</div>
  
    
-               <button class="btn butn1" type="submit" name="submit" id="myInput">REGISTER</button></a>
+               <button class="btn butn1" type="button" name="submit" id="myInput">REGISTER</button></a>
        </div>
 
 		</div>
@@ -83,25 +83,24 @@ session_start();
 
 <script>
 
-$(function () {
+$(document).ready(function(){
 
-        $('form').on('submit', function (e) {
+    $("#myInput").click(function(){
 
-        var oid = Math.floor((Math.random() * 100000));
-
-          e.preventDefault();
+    var mobile=$("#mom").val();
+   var email=$("#emmi").val();
+   var password=$("#pass").val();
 
           $.ajax({
             type: 'get',
-            url: 'http://codegente.com/aapp/registerjs.php',
-            data: $('form').serialize(),
+            url: 'http://codegente.com/aapp/registerjs.php?email='+email+'&password='+password+'&mobile='+mobile,
+            data: '',
             success: function () {
                          
-                  
-                 url=document.URL;
-
-                   var idd=url.split("=")[1];
-                  window.location.href="login.html";
+                               
+                   
+              
+             // window.location.href="verify.html";
           
 
                 
